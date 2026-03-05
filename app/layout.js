@@ -1,4 +1,5 @@
 import { Inter, Playfair_Display } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { getSiteConfig } from '../lib/content';
 import SiteHeader from './components/SiteHeader';
@@ -20,6 +21,19 @@ export default function RootLayout({ children }) {
         <SiteHeader site={site} />
         {children}
         <SiteFooter site={site} />
+        {/* Netlify Identity widget — handles recovery/confirmation tokens at site root */}
+        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" strategy="afterInteractive" />
+        <Script id="netlify-identity-redirect" strategy="afterInteractive">{`
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", function(user) {
+              if (!user) {
+                window.netlifyIdentity.on("login", function() {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        `}</Script>
       </body>
     </html>
   );
