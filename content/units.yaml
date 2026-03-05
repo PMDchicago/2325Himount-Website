@@ -1,0 +1,25 @@
+units:
+- title: Studio
+  price_range: $860
+  sq_ft: null
+  availability: Waitlist
+  features:
+  - Efficient layout
+  - Natural light
+  income_restricted: false
+- title: 1 Bedroom
+  price_range: $1,000
+  sq_ft: null
+  availability: Waitlist
+  features:
+  - Separate bedroom
+  - Functional kitchen
+  income_restricted: false
+- title: 2 Bedroom
+  price_range: $1,150
+  sq_ft: null
+  availability: Waitlist
+  features:
+  - Two-bedroom layout
+  - Extra storage
+  income_restricted: false
