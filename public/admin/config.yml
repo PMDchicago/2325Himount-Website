@@ -1,7 +1,8 @@
 backend:
-  name: github
-  repo: PMDchicago/2325Himount-Website
+  name: git-gateway
+  repo: 0333PMD/2325Himount-Website
   branch: main
+  squash_merges: true
 
 publish_mode: editorial_workflow
 media_folder: "public/images"
