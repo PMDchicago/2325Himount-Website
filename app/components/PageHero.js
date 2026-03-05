@@ -1,15 +1,9 @@
-export default function PageHero({ title, subtitle, ctaText, ctaHref = '/contact' }) {
+export default function PageHero({ title, subtitle }) {
   return (
-    <section className="hero">
-      <div className="container hero-inner">
-        <p className="eyebrow">Himount Gardens</p>
+    <section className="page-hero">
+      <div className="container">
         <h1>{title}</h1>
-        {subtitle ? <p className="hero-subtitle">{subtitle}</p> : null}
-        {ctaText ? (
-          <a className="hero-cta" href={ctaHref}>
-            {ctaText}
-          </a>
-        ) : null}
+        {subtitle ? <p>{subtitle}</p> : null}
       </div>
     </section>
   );
