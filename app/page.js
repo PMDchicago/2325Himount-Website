@@ -13,7 +13,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <HomeHero site={site} />
+      <HomeHero site={site} heroImage={home.hero_image} />
       <StatsBar />
 
       <section className="section">
