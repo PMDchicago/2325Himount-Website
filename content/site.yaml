@@ -11,8 +11,8 @@ marketing_knobs:
   announcement_enabled: false
   announcement_text: ""
 colors:
-  primary: "#008403"
-  secondary: "#f3e175"
+  primary: "#027c06"
+  secondary: "#ffeb84"
 nav:
   - label: Home
     href: /
