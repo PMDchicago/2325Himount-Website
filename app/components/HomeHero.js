@@ -33,7 +33,6 @@ export default function HomeHero({ site, heroImage }) {
           padding: '1.5rem 2rem',
           maxWidth: '480px',
         } : undefined}>
-          <p className="hero-eyebrow">Milwaukee, Wisconsin · Est. 1925</p>
           <h1
             className="hero-title"
             style={heroImage ? { color: 'var(--primary)', marginBottom: '1.25rem' } : undefined}
