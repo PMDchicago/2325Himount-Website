@@ -79,17 +79,20 @@ export default function NeighborhoodPage() {
             <div style={{
               width: '100%',
               aspectRatio: '16/9',
-              background: 'linear-gradient(135deg, #e8e0d5, #d4cbbf)',
               borderRadius: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '0.6rem',
-              color: 'var(--muted)',
+              overflow: 'hidden',
+              border: '1px solid var(--border)',
             }}>
-              <MapPin size={36} style={{ color: '#c0b8ad' }} strokeWidth={1.25} />
-              <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>Map integration coming soon</span>
+              <iframe
+                src="https://maps.google.com/maps?q=2325+N+50th+Street+Milwaukee+WI+53210&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Himount Gardens Location"
+              />
             </div>
           </div>
         </div>
