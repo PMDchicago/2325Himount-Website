@@ -19,16 +19,19 @@ export default function HomeHero({ site, heroImage }) {
         style={heroImage ? {
           alignItems: 'flex-start',
           paddingBottom: '2.5rem',
+          margin: '0',
+          paddingLeft: '3rem',
+          maxWidth: '100%',
         } : undefined}
       >
         <div style={heroImage ? {
           display: 'inline-block',
-          background: 'rgba(247, 243, 236, 0.82)',
+          background: 'rgba(247, 243, 236, 0.48)',
           backdropFilter: 'blur(10px)',
           WebkitBackdropFilter: 'blur(10px)',
           borderRadius: '14px',
           padding: '1.5rem 2rem',
-          maxWidth: '520px',
+          maxWidth: '480px',
         } : undefined}>
           <p className="hero-eyebrow">Milwaukee, Wisconsin · Est. 1925</p>
           <h1
@@ -50,7 +53,7 @@ export default function HomeHero({ site, heroImage }) {
             </Link>
             <a
               href={"tel:" + (site.phone_number?.replace(/[^0-9]/g, '') || '')}
-              className={heroImage ? 'btn-primary' : 'btn-outline'}
+              className="btn-primary"
               style={heroImage ? {
                 background: 'var(--primary)',
                 color: '#fff',
