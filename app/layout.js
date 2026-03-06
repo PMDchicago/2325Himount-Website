@@ -17,7 +17,11 @@ export default function RootLayout({ children }) {
   const site = getSiteConfig();
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>
+      <body style={{
+        '--primary':      (site.colors && site.colors.primary)   || '#1f3a5f',
+        '--primary-dark': (site.colors && site.colors.primary)   || '#152840',
+        '--accent':       (site.colors && site.colors.secondary) || '#c5a065',
+      }}>
         <SiteHeader site={site} />
         {children}
         <SiteFooter site={site} />
