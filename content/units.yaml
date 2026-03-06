@@ -7,7 +7,31 @@ units:
   - Efficient layout
   - Natural light
   income_restricted: false
-- title: 1 Bedroom
+- title: 1 Bedroom — Plan A
+  price_range: $1,000
+  sq_ft: null
+  availability: Waitlist
+  features:
+  - Separate bedroom
+  - Functional kitchen
+  income_restricted: false
+- title: 1 Bedroom — Plan B
+  price_range: $1,000
+  sq_ft: null
+  availability: Waitlist
+  features:
+  - Separate bedroom
+  - Functional kitchen
+  income_restricted: false
+- title: 1 Bedroom — Plan C
+  price_range: $1,000
+  sq_ft: null
+  availability: Waitlist
+  features:
+  - Separate bedroom
+  - Functional kitchen
+  income_restricted: false
+- title: 1 Bedroom — Plan D
   price_range: $1,000
   sq_ft: null
   availability: Waitlist
