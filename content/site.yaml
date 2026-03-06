@@ -4,27 +4,27 @@ address:
   street: 2325 N. 50th Street
   city: Milwaukee
   state: WI
-  zip: '53210'
+  zip: "53210"
 marketing_knobs:
   hero_cta: Check Availability
   secondary_cta: Schedule Tour
   announcement_enabled: false
-  announcement_text: ''
+  announcement_text: ""
 colors:
-  primary: '#1f3a5f'
-  secondary: '#d9c7a4'
+  primary: "#008403"
+  secondary: "#f3e175"
 nav:
-- label: Home
-  href: /
-- label: Floor Plans
-  href: /floor-plans
-- label: Amenities
-  href: /amenities
-- label: Neighborhood
-  href: /neighborhood
-- label: Contact
-  href: /contact
+  - label: Home
+    href: /
+  - label: Floor Plans
+    href: /floor-plans
+  - label: Amenities
+    href: /amenities
+  - label: Neighborhood
+    href: /neighborhood
+  - label: Contact
+    href: /contact
 footer:
   equal_housing: true
-  disclaimer: Pricing and availability subject to change. Contact leasing office for
-    current details.
+  disclaimer: Pricing and availability subject to change. Contact leasing office
+    for current details.
