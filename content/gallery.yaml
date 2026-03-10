@@ -3,3 +3,11 @@ images:
     alt_text: Himount Gardens common area
   - src: /images/studio.gif
     alt_text: Studio
+  - src: /images/one_bedroom-619-sq-ft.gif
+    alt_text: "1 Bedroom Courtyard "
+  - src: /images/one_bedroom-696-sq-ft.gif
+    alt_text: 1 Bedroom East Courtyard
+  - alt_text: "2 Bedroom "
+    src: /images/two_bedroom.gif
+  - alt_text: 1 Bedroom End
+    src: /images/one_bedroom-688-sq-ft.gif
