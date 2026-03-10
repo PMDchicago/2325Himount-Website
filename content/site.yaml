@@ -12,7 +12,7 @@ marketing_knobs:
   announcement_text: ""
 colors:
   primary: "#015505"
-  secondary: "#ffeb84"
+  secondary: "#84d4ff"
 nav:
   - label: Home
     href: /
