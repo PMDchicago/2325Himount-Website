@@ -1,7 +1,5 @@
 images:
-  - src: /images/himount-hero.jpg
-    alt_text: Himount Gardens exterior
   - src: /images/himount-lobby.jpg
     alt_text: Himount Gardens common area
-  - src: /images/one_bedroom-619-sq-ft.gif
-    alt_text: 1 bedroom
+  - src: /images/studio.gif
+    alt_text: Studio
