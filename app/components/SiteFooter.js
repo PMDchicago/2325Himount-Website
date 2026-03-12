@@ -1,6 +1,29 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Phone, MapPin } from 'lucide-react';
+
+function EqualHousingLogo({ size = 48 }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 120"
+      width={size}
+      height={size * 1.2}
+      aria-label="Equal Housing Opportunity"
+      role="img"
+      style={{ display: 'block' }}
+    >
+      <polygon points="50,2 2,42 18,42 18,90 82,90 82,42 98,42" fill="none" stroke="currentColor" strokeWidth="4" />
+      <rect x="30" y="52" width="40" height="4" fill="currentColor" />
+      <rect x="30" y="62" width="40" height="4" fill="currentColor" />
+      <text x="50" y="108" textAnchor="middle" fontSize="10" fontFamily="Arial, sans-serif" fontWeight="bold" fill="currentColor">
+        EQUAL HOUSING
+      </text>
+      <text x="50" y="118" textAnchor="middle" fontSize="8" fontFamily="Arial, sans-serif" fill="currentColor">
+        OPPORTUNITY
+      </text>
+    </svg>
+  );
+}
 
 export default function SiteFooter({ site }) {
   const year = new Date().getFullYear();
@@ -42,38 +65,23 @@ export default function SiteFooter({ site }) {
             <p className="footer-disclaimer">
               {site.footer?.disclaimer || 'Pricing and availability subject to change without notice.'}
             </p>
+            {site.footer?.equal_housing !== false && (
+              <div style={{ marginTop: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <EqualHousingLogo size={40} />
+                <p className="footer-disclaimer" style={{ margin: 0 }}>
+                  Equal Opportunity Housing Provider.
+                </p>
+              </div>
+            )}
           </div>
 
         </div>
       </div>
 
-      {/* Equal Housing Opportunity — centered compliance strip */}
-      {site.footer?.equal_housing !== false && (
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '0.4rem',
-          padding: '1.25rem 1rem',
-          borderTop: '1px solid rgba(255,255,255,0.08)',
-        }}>
-          <Image
-            src="/images/equal-housing-opportunity.jpg"
-            alt="Equal Housing Opportunity"
-            width={48}
-            height={48}
-            style={{ filter: 'invert(1) brightness(0.7)', opacity: 0.75 }}
-          />
-          <span style={{ fontSize: '0.65rem', letterSpacing: '0.08em', opacity: 0.55, textTransform: 'uppercase' }}>
-            Equal Housing Opportunity
-          </span>
-        </div>
-      )}
-
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span>© {year} {site.site_title}. All rights reserved.</span>
-          <span>Prairie Management and Development, Inc. · Milwaukee, WI</span>
+          <span>Professional Management · Milwaukee, WI</span>
         </div>
       </div>
     </footer>
