@@ -1,5 +1,6 @@
 units:
 - title: Studio
+  floor_plan: /images/studio.gif
   price_range: $860
   sq_ft: null
   availability: Waitlist
@@ -8,6 +9,7 @@ units:
   - Natural light
   income_restricted: false
 - title: 1 Bedroom — Plan A
+  floor_plan: /images/one_bedroom-619-sq-ft.gif
   price_range: $1,000
   sq_ft: null
   availability: Waitlist
@@ -16,6 +18,7 @@ units:
   - Functional kitchen
   income_restricted: false
 - title: 1 Bedroom — Plan B
+  floor_plan: /images/one_bedroom-696-sq-ft.gif
   price_range: $1,000
   sq_ft: null
   availability: Waitlist
@@ -24,6 +27,7 @@ units:
   - Functional kitchen
   income_restricted: false
 - title: 1 Bedroom — Plan C
+  floor_plan: /images/one_bedroom-688-sq-ft.gif
   price_range: $1,000
   sq_ft: null
   availability: Waitlist
@@ -32,6 +36,7 @@ units:
   - Functional kitchen
   income_restricted: false
 - title: 1 Bedroom — Plan D
+  floor_plan: /images/one_bedroom-688-sq-ft.gif
   price_range: $1,000
   sq_ft: null
   availability: Waitlist
@@ -40,6 +45,7 @@ units:
   - Functional kitchen
   income_restricted: false
 - title: 2 Bedroom
+  floor_plan: /images/two_bedroom.gif
   price_range: $1,150
   sq_ft: null
   availability: Waitlist

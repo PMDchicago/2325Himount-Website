@@ -63,6 +63,7 @@ collections:
             summary: "{{fields.title}} • {{fields.price_range}}"
             fields:
               - { label: "Title", name: "title", widget: "string", hint: "Studio, 1 Bedroom, 2 Bedroom" }
+              - { label: "Floor Plan Image", name: "floor_plan", widget: "image", required: false, hint: "Upload or select a floor plan image" }
               - { label: "Price Range", name: "price_range", widget: "string", hint: "Example: $1,000" }
               - { label: "Square Footage", name: "sq_ft", widget: "number", required: false }
               - { label: "Availability", name: "availability", widget: "select", options: ["Available", "Waitlist", "Sold Out"], default: "Waitlist" }

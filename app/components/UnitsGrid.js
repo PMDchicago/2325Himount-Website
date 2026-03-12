@@ -1,25 +1,6 @@
 import Link from 'next/link';
 import { CheckCircle, Building2 } from 'lucide-react';
 
-/* Map unit titles to uploaded floor-plan GIFs */
-const FLOOR_PLAN_MAP = {
-  'Studio': '/images/studio.gif',
-  '1 Bedroom — Plan A': '/images/one_bedroom-619-sq-ft.gif',
-  '1 Bedroom — Plan B': '/images/one_bedroom-696-sq-ft.gif',
-  '1 Bedroom — Plan C': '/images/one_bedroom-688-sq-ft.gif',
-  '1 Bedroom — Plan D': '/images/one_bedroom-688-sq-ft.gif',
-  '2 Bedroom': '/images/two_bedroom.gif',
-};
-
-function getFloorPlan(title) {
-  if (FLOOR_PLAN_MAP[title]) return FLOOR_PLAN_MAP[title];
-  const lower = title.toLowerCase();
-  if (lower.includes('studio')) return '/images/studio.gif';
-  if (lower.includes('2 bed') || lower.includes('two bed')) return '/images/two_bedroom.gif';
-  if (lower.includes('1 bed') || lower.includes('one bed')) return '/images/one_bedroom-619-sq-ft.gif';
-  return null;
-}
-
 export default function UnitsGrid({ units = [], disclaimer }) {
   if (!units.length) {
     return <p className="muted">Unit information will be updated soon.</p>;
@@ -35,7 +16,7 @@ export default function UnitsGrid({ units = [], disclaimer }) {
       <div className="units-grid">
         {units.map((unit) => {
           const isAvailable = unit.availability === 'Available';
-          const floorPlan = getFloorPlan(unit.title);
+          const floorPlan = unit.floor_plan || null;
           return (
             <article key={unit.title} className="unit-card">
               {floorPlan ? (
