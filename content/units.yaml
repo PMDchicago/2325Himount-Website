@@ -53,3 +53,9 @@ units:
       - Two-bedroom layout
       - Extra storage
     income_restricted: false
+  - availability: Waitlist
+    income_restricted: false
+    title: 1 Bedroom - Plan E
+    floor_plan: /images/1-bed-eat-in-kitchen.svg
+    price_range: "940"
+    sq_ft: 530
