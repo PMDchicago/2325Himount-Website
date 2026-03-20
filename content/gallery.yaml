@@ -9,15 +9,5 @@ images:
     src: /images/two_bedroom.gif
   - alt_text: 1 Bedroom End
     src: /images/one_bedroom-688-sq-ft.gif
-  - src: /images/unit-505-pic-1.jpg
-    alt_text: Unit interior - living area
-  - src: /images/unit-505-pic-2.jpg
-    alt_text: Unit interior - kitchen
-  - src: /images/unit-505-pic-3.jpg
-    alt_text: Unit interior - bedroom
-  - src: /images/unit-505-pic-4.jpg
-    alt_text: Unit interior - window view
-  - src: /images/unit-505-pic-5.jpg
-    alt_text: Unit interior - bathroom
-  - src: /images/unit-505-pic-6.jpg
-    alt_text: Unit interior - hallway
+  - src: /images/1-bed-eat-in-kitchen.svg
+    alt_text: "1 Bedroom W/ Eat in Kitchen "
