@@ -27,7 +27,7 @@ units:
       - Functional kitchen
     income_restricted: false
   - title: 1 Bedroom — Plan C
-    floor_plan: ""
+    floor_plan: /images/bedrooom-pt.4.jpg
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
