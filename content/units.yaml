@@ -27,7 +27,7 @@ units:
       - Functional kitchen
     income_restricted: false
   - title: 1 Bedroom — Plan C
-    floor_plan: /images/bedrooom-pt.4.jpg
+    floor_plan: /images/one_bedroom-696-sq-ft.gif
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
@@ -35,6 +35,8 @@ units:
       - Separate bedroom
       - Functional kitchen
     income_restricted: false
+    photos:
+      - src: /images/bedrooom-pt.4.jpg
   - title: 1 Bedroom — Plan D
     floor_plan: /images/one_bedroom-688-sq-ft.gif
     price_range: $1,000
