@@ -7,6 +7,8 @@ units:
     features:
       - Efficient layout
       - Natural light
+      - Built in Linen Closet
+      - Walk-Through Closet
     income_restricted: false
     photos:
       - src: /images/unit-505-pic-1.jpg
@@ -14,7 +16,7 @@ units:
       - src: /images/unit-505-pic-4.jpg
         alt_text: Living Space Pt.2
       - src: /images/unit-505-pic-6.jpg
-        alt_text: Walk Thru Closet & Built in Linen Closet
+        alt_text: Walk-Through Closet & Built in Linen Closet
       - src: /images/unit-505-pic-1.jpg
         alt_text: Dinning Nook
       - src: /images/unit-505-pic-2.jpg
@@ -70,7 +72,16 @@ units:
     income_restricted: false
   - availability: Waitlist
     income_restricted: false
-    title: 1 Bedroom - Plan E
+    title: 1 Bedroom - Plan E- Eat In Kitchen
     floor_plan: /images/1-bed-eat-in-kitchen.svg
     price_range: "940"
     sq_ft: 530
+    photos:
+      - src: /images/living-room.jpg
+        alt_text: "Living Room "
+      - src: /images/bedroom.jpg
+        alt_text: "Bedroom "
+      - src: /images/kitchen.jpg
+        alt_text: Kitchen
+      - src: /images/bathroom.jpg
+        alt_text: "Bathroom "
