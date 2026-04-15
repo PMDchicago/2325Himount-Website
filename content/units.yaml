@@ -64,11 +64,12 @@ units:
   - title: 2 Bedroom
     floor_plan: /images/two_bedroom.gif
     price_range: $1,150
-    sq_ft: null
+    sq_ft: 900
     availability: Waitlist
     features:
       - Two-bedroom layout
       - Extra storage
+      - "Built in China Cabinets "
     income_restricted: false
   - availability: Waitlist
     income_restricted: false
