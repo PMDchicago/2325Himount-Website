@@ -70,7 +70,19 @@ units:
       - Two-bedroom layout
       - Extra storage
       - "Built in China Cabinets "
+      - Built in Linen Closet
     income_restricted: false
+    photos:
+      - src: /images/hallway.jpg
+        alt_text: "Entrance/ Hallway "
+      - src: /images/hallway-linen-closet.jpg
+        alt_text: "Linen Closet "
+      - src: /images/304-living-room.jpg
+        alt_text: "Living Room "
+      - src: /images/304-dining-into-kitchen.jpg
+        alt_text: Kitchen/ Dinning Nook
+      - src: /images/304-kitchen.jpg
+        alt_text: Kitchen
   - availability: Waitlist
     income_restricted: false
     title: 1 Bedroom - Plan E- Eat In Kitchen
