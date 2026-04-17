@@ -89,19 +89,3 @@ units:
         alt_text: Kitchen/ Dinning Nook
       - src: /images/304-kitchen.jpg
         alt_text: Kitchen
-  - availability: Waitlist
-    income_restricted: false
-    title: 1 Bedroom - Plan E- Eat In Kitchen
-    floor_plan: /images/1-bed-eat-in-kitchen.svg
-    photos_folder: 1br-plan-e
-    price_range: "940"
-    sq_ft: 530
-    photos:
-      - src: /images/living-room.jpg
-        alt_text: "Living Room "
-      - src: /images/bedroom.jpg
-        alt_text: "Bedroom "
-      - src: /images/kitchen.jpg
-        alt_text: Kitchen
-      - src: /images/bathroom.jpg
-        alt_text: "Bathroom "
