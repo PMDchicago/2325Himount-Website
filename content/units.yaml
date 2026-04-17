@@ -1,19 +1,32 @@
 units:
-  - title: Studio
-    floor_plan: /images/Studio/studio.gif
-    photos_folder: Studio
+  - photos:
+      - src: /images/unit-505-pic-1.jpg
+        alt_text: Living Space Pt.1
+      - src: /images/unit-505-pic-4.jpg
+        alt_text: Living Space Pt.2
+      - src: /images/unit-505-pic-6.jpg
+        alt_text: Walk-Through Closet & Built in Linen Closet
+      - src: /images/unit-505-pic-1.jpg
+        alt_text: Dinning Nook
+      - src: /images/unit-505-pic-2.jpg
+        alt_text: "Kitchen "
+      - alt_text: Bathroom
+        src: /images/unit-505-pic-5.jpg
     price_range: $860
+    photos_folder: studio
     sq_ft: null
+    income_restricted: false
+    title: Studio
     availability: Waitlist
+    floor_plan: /images/studio.gif
     features:
       - Efficient layout
       - Natural light
       - Built in Linen Closet
       - Walk-Through Closet
-    income_restricted: false
-  - title: 1 Bedroom — Plan A
-    floor_plan: /images/1Br-PlanA/one_bedroom-619-sq-ft.gif
-    photos_folder: 1Br-PlanA
+  - title: 1 Bedroom — Plan A-CourtyardNS
+    floor_plan: /images/one_bedroom-619-sq-ft.gif
+    photos_folder: 1br-plan-a
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
@@ -22,8 +35,8 @@ units:
       - Functional kitchen
     income_restricted: false
   - title: 1 Bedroom — Plan B
-    floor_plan: /images/1Br-PlanB/one_bedroom-696-sq-ft.gif
-    photos_folder: 1Br-PlanB
+    floor_plan: /images/one_bedroom-696-sq-ft.gif
+    photos_folder: 1br-plan-b
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
@@ -31,19 +44,21 @@ units:
       - Separate bedroom
       - Functional kitchen
     income_restricted: false
-  - title: 1 Bedroom — Plan C
-    floor_plan: /images/1Br-PlanC/one_bedroom-696-sq-ft.gif
-    photos_folder: 1Br-PlanC
+  - photos:
+      - src: /images/bedrooom-pt.4.jpg
     price_range: $1,000
+    photos_folder: 1br-plan-c
     sq_ft: null
+    income_restricted: false
+    title: 1 Bedroom — Plan C
     availability: Waitlist
+    floor_plan: /images/one_bedroom-696-sq-ft.gif
     features:
       - Separate bedroom
       - Functional kitchen
-    income_restricted: false
   - title: 1 Bedroom — Plan D
-    floor_plan: /images/1Br-PlanD/1-bed-eat-in-kitchen.svg
-    photos_folder: 1Br-PlanD
+    floor_plan: /images/one_bedroom-688-sq-ft.gif
+    photos_folder: 1br-plan-d
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
@@ -51,15 +66,42 @@ units:
       - Separate bedroom
       - Functional kitchen
     income_restricted: false
-  - title: 2 Bedroom
-    floor_plan: /images/2Br/two_bedroom.gif
-    photos_folder: 2Br
+  - photos:
+      - src: /images/hallway.jpg
+        alt_text: "Entrance/ Hallway "
+      - src: /images/hallway-linen-closet.jpg
+        alt_text: "Linen Closet "
+      - src: /images/304-living-room.jpg
+        alt_text: "Living Room "
+      - src: /images/304-dining-into-kitchen.jpg
+        alt_text: Kitchen/ Dinning Nook
+      - src: /images/304-kitchen.jpg
+        alt_text: Kitchen
     price_range: $1,150
+    photos_folder: 2br
     sq_ft: 900
+    income_restricted: false
+    title: 2 Bedroom
     availability: Waitlist
+    floor_plan: /images/two_bedroom.gif
     features:
       - Two-bedroom layout
       - Extra storage
-      - "Built in China Cabinets"
+      - "Built in China Cabinets "
       - Built in Linen Closet
+  - availability: Waitlist
     income_restricted: false
+    title: 1 Bedroom - Plan E- Eat In Kitchen
+    floor_plan: /images/1-bed-eat-in-kitchen.svg
+    photos_folder: 1br-plan-e
+    price_range: "940"
+    sq_ft: 530
+    photos:
+      - src: /images/living-room.jpg
+        alt_text: "Living Room "
+      - src: /images/bedroom.jpg
+        alt_text: "Bedroom "
+      - src: /images/kitchen.jpg
+        alt_text: Kitchen
+      - src: /images/bathroom.jpg
+        alt_text: "Bathroom "
