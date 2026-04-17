@@ -34,7 +34,7 @@ units:
       - Separate bedroom
       - Functional kitchen
     income_restricted: false
-  - title: 1 Bedroom — Plan B
+  - title: 1 Bedroom — Plan B-EastE
     floor_plan: /images/one_bedroom-696-sq-ft.gif
     photos_folder: 1br-plan-b
     price_range: $1,000
@@ -44,19 +44,7 @@ units:
       - Separate bedroom
       - Functional kitchen
     income_restricted: false
-  - photos:
-      - src: /images/bedrooom-pt.4.jpg
-    price_range: $1,000
-    photos_folder: 1br-plan-c
-    sq_ft: null
-    income_restricted: false
-    title: 1 Bedroom — Plan C
-    availability: Waitlist
-    floor_plan: /images/one_bedroom-696-sq-ft.gif
-    features:
-      - Separate bedroom
-      - Functional kitchen
-  - title: 1 Bedroom — Plan D
+  - title: 1 Bedroom — Plan C-CourtyardE
     floor_plan: /images/one_bedroom-688-sq-ft.gif
     photos_folder: 1br-plan-d
     price_range: $1,000
@@ -91,7 +79,7 @@ units:
       - Built in Linen Closet
   - availability: Waitlist
     income_restricted: false
-    title: 1 Bedroom - Plan E- Eat In Kitchen
+    title: 1 Bedroom - Plan D- Eat In Kitchen
     floor_plan: /images/1-bed-eat-in-kitchen.svg
     photos_folder: 1br-plan-e
     price_range: "940"
