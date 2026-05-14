@@ -2,14 +2,14 @@ images:
   - src: /images/studio.gif
     alt_text: Studio
   - src: /images/one_bedroom-619-sq-ft.gif
-    alt_text: "1 Bedroom Courtyard "
+    alt_text: 1 Bedroom-Courtyard NS
   - src: /images/one_bedroom-696-sq-ft.gif
-    alt_text: 1 Bedroom East Courtyard
+    alt_text: 1 Bedroom-PlanC-CourtyardE
   - alt_text: "2 Bedroom "
     src: /images/two_bedroom.gif
-  - alt_text: 1 Bedroom End
+  - alt_text: 1 Bedroom-PlanB-EastE
     src: /images/one_bedroom-688-sq-ft.gif
   - src: /images/1-bed-eat-in-kitchen.svg
-    alt_text: "1 Bedroom W/ Eat in Kitchen "
+    alt_text: "1 Bedroom-PlanD- Eat in Kitchen "
   - src: /images/2325-front-bld.jpg
     alt_text: 2325 Front
