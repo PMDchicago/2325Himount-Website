@@ -82,7 +82,7 @@ units:
     title: 1 Bedroom - Plan D- Eat In Kitchen
     floor_plan: /images/1-bed-eat-in-kitchen.svg
     photos_folder: 1br-plan-e
-    price_range: "940"
+    price_range: $960
     sq_ft: 530
     photos:
       - src: /images/living-room.jpg
