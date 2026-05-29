@@ -18,7 +18,7 @@ units:
     income_restricted: false
     title: Studio
     availability: Waitlist
-    floor_plan: /images/studio.gif
+    floor_plan: /images/studio-floor-plan.jpg
     features:
       - Efficient layout
       - Natural light
