@@ -1,7 +1,7 @@
 ---
 title: Home
 seo_description: Himount Gardens apartments in Milwaukee, WI.
-hero_image: ""
+hero_image: /images/small-building-and-sign2.jpg
 ---
 
 ## Welcome to Himount Gardens
