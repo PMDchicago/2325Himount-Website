@@ -107,17 +107,3 @@ collections:
           - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "gallery"
-    label: "Gallery"
-    files:
-      - name: "gallery_images"
-        label: "Gallery Images"
-        file: "content/gallery.yaml"
-        fields:
-          - label: "Images"
-            name: "images"
-            widget: "list"
-            summary: "{{fields.alt_text}}"
-            fields:
-              - { label: "Image", name: "src", widget: "image" }
-              - { label: "Alt Text", name: "alt_text", widget: "string" }

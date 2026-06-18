@@ -657,57 +657,6 @@ img, svg { display: block; }
   object-fit: contain;
 }
 
-/* Gallery page grid */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-.gallery-item {
-  margin: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #f8f6f3;
-  border: 1px solid var(--border);
-}
-.gallery-img-wrap {
-  position: relative;
-  overflow: hidden;
-}
-.gallery-img-wrap:hover .gallery-download {
-  opacity: 1;
-}
-.gallery-download {
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  border-radius: 8px;
-  padding: 0.4rem 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  text-decoration: none;
-  cursor: pointer;
-}
-.gallery-download:hover {
-  background: rgba(0, 0, 0, 0.85);
-}
-.gallery-item img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
-}
-.gallery-item figcaption {
-  padding: 0.75rem 1rem;
-  font-size: 0.88rem;
-  color: var(--muted);
-  text-align: center;
-}
 
 /* Unit interior photo thumbnails */
 .unit-photos {
