@@ -2,6 +2,7 @@ import { getPage, getSiteConfig } from '../../lib/content';
 import PageHero from '../components/PageHero';
 import MarkdownContent from '../components/MarkdownContent';
 import { Phone, MapPin } from 'lucide-react';
+import ContactForm from '../components/ContactForm';
 
 export const metadata = {
   title: 'Contact',
@@ -53,47 +54,7 @@ export default function ContactPage() {
           {/* Right col: contact form */}
           <div className="card">
             <h2 style={{ marginTop: 0, fontFamily: 'var(--font-serif)' }}>Request Information</h2>
-            <form className="contact-form" name="contact" method="post">
-              <label>
-                Full Name
-                <input type="text" name="name" required placeholder="Your full name" />
-              </label>
-              <label>
-                Email Address
-                <input type="email" name="email" required placeholder="your@email.com" />
-              </label>
-              <label>
-                Phone (optional)
-                <input type="tel" name="phone" placeholder="(555) 000-0000" />
-              </label>
-              <label>
-                I&apos;m interested in&hellip;
-                <select name="interest">
-                  <option value="">— Select unit type —</option>
-                  <option value="studio">Studio ($860/mo)</option>
-                  <option value="1br">1 Bedroom ($1,000/mo)</option>
-                  <option value="2br">2 Bedroom ($1,150/mo)</option>
-                </select>
-              </label>
-              <label>
-                Message
-                <textarea name="message" rows={5} placeholder="Any questions or comments…" />
-              </label>
-              <button
-                type="submit"
-                className="btn-secondary"
-                style={{
-                  display: 'inline-block',
-                  width: 'auto',
-                  padding: '0.8rem 1.75rem',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontSize: '1rem',
-                }}
-              >
-                Send Request
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
         </div>

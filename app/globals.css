@@ -568,6 +568,13 @@ img, svg { display: block; }
   border-color: var(--primary);
 }
 
+.turnstile-wrap { min-height: 65px; display: flex; align-items: center; }
+.form-status { margin: -0.2rem 0 0; font-weight: 600; font-size: 0.95rem; }
+.form-status.pending { color: var(--primary); }
+.form-status.success { color: #126a28; }
+.form-status.error { color: #b42318; }
+.contact-form button:disabled { pointer-events: none; }
+
 /* ===== FOOTER ===== */
 .site-footer { background: #0b1b2e; color: #b0bbc9; }
 .footer-top { padding: 3.5rem 0; }
