@@ -1,6 +1,6 @@
 export default function StatsBar() {
   const stats = [
-    { number: '84', label: 'Total Units' },
+    { number: '88', label: 'Total Units' },
     { number: '6', label: 'Floor Plans' },
     { number: '1925', label: 'Est.' },
     { number: '53210', label: 'Milwaukee, WI' },
