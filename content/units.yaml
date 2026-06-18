@@ -13,20 +13,20 @@ units:
       - alt_text: Bathroom
         src: /images/unit-505-pic-5.jpg
     price_range: $860
-    photos_folder: studio
+    photos_folder: Studio
     sq_ft: null
     income_restricted: false
     title: Studio
     availability: Waitlist
-    floor_plan: /images/studio-floor-plan.jpg
+    floor_plan: /images/Studio/studio-floor-plan.jpg
     features:
       - Efficient layout
       - Natural light
       - Built in Linen Closet
       - Walk-Through Closet
   - title: 1 Bedroom — Plan A-CourtyardNS
-    floor_plan: /images/one_bedroom-619-sq-ft.gif
-    photos_folder: 1br-plan-a
+    floor_plan: /images/1Br-PlanA/one_bedroom-619-sq-ft.gif
+    photos_folder: 1Br-PlanA
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
@@ -35,8 +35,8 @@ units:
       - Functional kitchen
     income_restricted: false
   - title: 1 Bedroom — Plan B-EastE
-    floor_plan: /images/one_bedroom-696-sq-ft.gif
-    photos_folder: 1br-plan-b
+    floor_plan: /images/1Br-PlanB/one_bedroom-696-sq-ft.gif
+    photos_folder: 1Br-PlanB
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
@@ -45,8 +45,8 @@ units:
       - Functional kitchen
     income_restricted: false
   - title: 1 Bedroom — Plan C-CourtyardE
-    floor_plan: /images/one_bedroom-688-sq-ft.gif
-    photos_folder: 1br-plan-d
+    floor_plan: /images/1Br-PlanC/one_bedroom-688-sq-ft.gif
+    photos_folder: 1Br-PlanC
     price_range: $1,000
     sq_ft: null
     availability: Waitlist
@@ -66,12 +66,12 @@ units:
       - src: /images/304-kitchen.jpg
         alt_text: Kitchen
     price_range: $1,150
-    photos_folder: 2br
+    photos_folder: 2Br
     sq_ft: 900
     income_restricted: false
     title: 2 Bedroom
     availability: Waitlist
-    floor_plan: /images/two_bedroom.gif
+    floor_plan: /images/2Br/two_bedroom.gif
     features:
       - Two-bedroom layout
       - Extra storage
@@ -80,8 +80,8 @@ units:
   - availability: Waitlist
     income_restricted: false
     title: 1 Bedroom - Plan D- Eat In Kitchen
-    floor_plan: /images/1-bed-eat-in-kitchen.svg
-    photos_folder: 1br-plan-e
+    floor_plan: /images/1Br-PlanD/1-bed-eat-in-kitchen.svg
+    photos_folder: 1Br-PlanD
     price_range: $960
     sq_ft: 530
     photos:
