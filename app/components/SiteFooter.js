@@ -81,7 +81,7 @@ export default function SiteFooter({ site }) {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span>© {year} {site.site_title}. All rights reserved.</span>
-          <span>Professional Management · Milwaukee, WI</span>
+          <span>Prairie Management & Development, Inc. · Chicago, IL</span>
         </div>
       </div>
     </footer>
