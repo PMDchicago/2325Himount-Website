@@ -18,6 +18,23 @@ function escapeHtml(value = '') {
     .replaceAll("'", '&#039;');
 }
 
+function looksLikeGibberish(str) {
+  if (!str || str.length < 30) return false;
+  // No whitespace at all in a long string → suspicious
+  if (!/\s/.test(str.trim())) return true;
+  // Mixed-case high-letter-density string with no structure
+  const alpha = str.replace(/[^a-zA-Z]/g, '');
+  if (alpha.length > 40) {
+    const upper = alpha.replace(/[^A-Z]/g, '').length;
+    const lower = alpha.replace(/[^a-z]/g, '').length;
+    if (upper > 0 && lower > 0) {
+      const ratio = Math.min(upper, lower) / Math.max(upper, lower);
+      if (ratio > 0.3 && alpha.length / str.length > 0.7) return true;
+    }
+  }
+  return false;
+}
+
 export async function POST(request) {
   let body;
   try {
@@ -31,10 +48,36 @@ export async function POST(request) {
   const phone = sanitize(body.phone);
   const interest = sanitize(body.interest);
   const message = sanitize(body.message);
+  const company = sanitize(body.company);
+  const ts = Number(body.ts);
   const token = sanitize(body['cf-turnstile-response']);
 
   if (!name || !email) {
     return NextResponse.json({ error: 'Name and email are required.' }, { status: 400 });
+  }
+
+  // Header-injection / newline guard
+  const textFields = [name, email, phone, interest];
+  if (textFields.some(f => /[\r\n]/.test(f))) {
+    return NextResponse.json({ error: 'Invalid input detected.' }, { status: 400 });
+  }
+
+  // Stricter server-side email format validation
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+    return NextResponse.json({ error: 'Invalid email format.' }, { status: 400 });
+  }
+
+  // Honeypot — silently succeed if a bot filled the hidden company field
+  if (company) {
+    return NextResponse.json({ ok: true });
+  }
+
+  // Timestamp — reject bot auto-submits (< 1.5s) and stale/replay (> 30min)
+  if (ts && !isNaN(ts)) {
+    const age = Date.now() - ts;
+    if (age < 1500 || age > 1_800_000) {
+      return NextResponse.json({ error: 'Form submission rejected.' }, { status: 400 });
+    }
   }
 
   if (!token) {
@@ -64,6 +107,11 @@ export async function POST(request) {
 
   if (!verifyResult.success) {
     return NextResponse.json({ error: 'Security check failed. Please try again.' }, { status: 400 });
+  }
+
+  // Gibberish heuristic — silently drop bot-generated spam messages
+  if (looksLikeGibberish(message)) {
+    return NextResponse.json({ ok: true });
   }
 
   const html = `

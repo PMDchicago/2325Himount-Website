@@ -62,6 +62,7 @@ export default function ContactForm() {
     const formData = new FormData(form);
     formData.set('cf-turnstile-response', turnstileToken);
     const payload = Object.fromEntries(formData.entries());
+    payload.ts = Date.now();
 
     try {
       const response = await fetch('/api/contact', {
@@ -128,6 +129,10 @@ export default function ContactForm() {
           Message
           <textarea name="message" rows={5} placeholder="Any questions or comments…" />
         </label>
+        { /* Honeypot — hidden from real users, bots fill it in */ }
+        <div style={{ position: 'absolute', left: '-9999px' }} aria-hidden="true">
+          <input type="text" name="company" tabIndex={-1} autoComplete="off" />
+        </div>
         <div className="turnstile-wrap">
           {TURNSTILE_SITE_KEY ? (
             <div ref={turnstileRef} />
