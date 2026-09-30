@@ -18,21 +18,35 @@ function escapeHtml(value = '') {
     .replaceAll("'", '&#039;');
 }
 
-function looksLikeGibberish(str) {
-  if (!str || str.length < 30) return false;
-  // No whitespace at all in a long string → suspicious
-  if (!/\s/.test(str.trim())) return true;
-  // Mixed-case high-letter-density string with no structure
-  const alpha = str.replace(/[^a-zA-Z]/g, '');
-  if (alpha.length > 40) {
-    const upper = alpha.replace(/[^A-Z]/g, '').length;
-    const lower = alpha.replace(/[^a-z]/g, '').length;
-    if (upper > 0 && lower > 0) {
-      const ratio = Math.min(upper, lower) / Math.max(upper, lower);
-      if (ratio > 0.3 && alpha.length / str.length > 0.7) return true;
+function looksLikeGibberish(value = '') {
+  const trimmed = String(value).trim();
+  if (trimmed.length < 10 || /\s/.test(trimmed) || !/^[A-Za-z0-9]+$/.test(trimmed)) {
+    return false;
+  }
+
+  let caseTransitions = 0;
+  let uppercaseCount = 0;
+  let lowercaseCount = 0;
+  for (const character of trimmed) {
+    if (/[A-Z]/.test(character)) uppercaseCount++;
+    if (/[a-z]/.test(character)) lowercaseCount++;
+  }
+  for (let i = 1; i < trimmed.length; i++) {
+    const previous = trimmed[i - 1];
+    const current = trimmed[i];
+    if (!/[A-Za-z]/.test(previous) || !/[A-Za-z]/.test(current)) continue;
+    if ((previous === previous.toUpperCase()) !== (current === current.toUpperCase())) {
+      caseTransitions++;
     }
   }
-  return false;
+
+  const caseRatio = Math.min(uppercaseCount, lowercaseCount) / Math.max(uppercaseCount, lowercaseCount);
+  return uppercaseCount >= 4 && lowercaseCount >= 4 && caseTransitions >= 6 && caseRatio >= 0.3;
+}
+
+function fakeSuccess(reason) {
+  console.warn('Contact form soft-rejected:', reason);
+  return NextResponse.json({ ok: true });
 }
 
 export async function POST(request) {
@@ -69,15 +83,16 @@ export async function POST(request) {
 
   // Honeypot — silently succeed if a bot filled the hidden company field
   if (company) {
-    return NextResponse.json({ ok: true });
+    return fakeSuccess('honeypot filled');
   }
 
   // Timestamp — reject bot auto-submits (< 1.5s) and stale/replay (> 30min)
-  if (ts && !isNaN(ts)) {
-    const age = Date.now() - ts;
-    if (age < 1500 || age > 1_800_000) {
-      return NextResponse.json({ error: 'Form submission rejected.' }, { status: 400 });
-    }
+  if (!Number.isFinite(ts)) {
+    return fakeSuccess('missing or invalid timestamp');
+  }
+  const age = Date.now() - ts;
+  if (age < 1500 || age > 1_800_000) {
+    return fakeSuccess(`invalid submission age (${age}ms)`);
   }
 
   if (!token) {
@@ -111,7 +126,7 @@ export async function POST(request) {
 
   // Gibberish heuristic — silently drop bot-generated spam messages
   if (looksLikeGibberish(message)) {
-    return NextResponse.json({ ok: true });
+    return fakeSuccess('gibberish message');
   }
 
   const html = `
