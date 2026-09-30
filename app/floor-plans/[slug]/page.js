@@ -16,8 +16,8 @@ export function generateMetadata({ params }) {
   const units = getUnits();
   const unit = units.find(u => slugify(u.title) === params.slug);
   return {
-    title: unit ? unit.title + ' — Himount Gardens' : 'Unit Details',
-    description: unit ? `${unit.title} apartment at Himount Gardens. ${unit.price_range}/month.` : ''
+    title: unit ? unit.title + ' — HiMount Gardens' : 'Unit Details',
+    description: unit ? `${unit.title} apartment at HiMount Gardens. ${unit.price_range}/month.` : ''
   };
 }
 

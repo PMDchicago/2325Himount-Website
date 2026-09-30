@@ -6,7 +6,7 @@ import ContactForm from '../components/ContactForm';
 
 export const metadata = {
   title: 'Contact',
-  description: 'Contact the Himount Gardens leasing office in Milwaukee, WI.'
+  description: 'Contact the HiMount Gardens leasing office in Milwaukee, WI.'
 };
 
 export default function ContactPage() {

@@ -5,7 +5,7 @@ import CtaBand from '../components/CtaBand';
 
 export const metadata = {
   title: 'Floor Plans',
-  description: 'Studio, one-bedroom, and two-bedroom floor plans at Himount Gardens in Milwaukee.'
+  description: 'Studio, one-bedroom, and two-bedroom floor plans at HiMount Gardens in Milwaukee.'
 };
 
 export default function FloorPlansPage() {

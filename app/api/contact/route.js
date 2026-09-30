@@ -87,7 +87,7 @@ export async function POST(request) {
   const turnstileSecret = process.env.TURNSTILE_SECRET_KEY || process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY;
   const resendApiKey = process.env.RESEND_API_KEY;
   const toEmail = process.env.CONTACT_TO_EMAIL || 'manager@himountgardens.com';
-  const fromEmail = process.env.CONTACT_FROM_EMAIL || 'Himount Gardens <no-reply@pmdchicago.com>';
+  const fromEmail = process.env.CONTACT_FROM_EMAIL || 'HiMount Gardens <no-reply@pmdchicago.com>';
 
   if (!turnstileSecret || !resendApiKey || !toEmail) {
     return NextResponse.json({ error: 'Contact form is not fully configured yet.' }, { status: 500 });
@@ -115,7 +115,7 @@ export async function POST(request) {
   }
 
   const html = `
-    <h2>New Himount Gardens inquiry</h2>
+    <h2>New HiMount Gardens inquiry</h2>
     <p><strong>Name:</strong> ${escapeHtml(name)}</p>
     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
     <p><strong>Phone:</strong> ${escapeHtml(phone || 'Not provided')}</p>
@@ -134,7 +134,7 @@ export async function POST(request) {
       from: fromEmail,
       to: [toEmail],
       reply_to: email,
-      subject: `Himount Gardens inquiry from ${name}`,
+      subject: `HiMount Gardens inquiry from ${name}`,
       html,
     }),
   });

@@ -1,10 +1,10 @@
 ---
 title: Contact
-seo_description: Contact Himount Gardens leasing office.
+seo_description: Contact HiMount Gardens leasing office.
 hero_image: /images/himount-hero.jpg
 ---
 
-## Contact Himount Gardens
+## Contact HiMount Gardens
 
 **Phone:** (414) 445-9772  
 **Address:** 2325 N. 50th Street, Milwaukee, WI 53210

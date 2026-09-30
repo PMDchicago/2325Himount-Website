@@ -1,12 +1,12 @@
 ---
 title: Home
-seo_description: Himount Gardens apartments in Milwaukee, WI.
+seo_description: HiMount Gardens apartments in Milwaukee, WI.
 hero_image: /images/small-building-and-sign2.jpg
 ---
 
-## Welcome to Himount Gardens
+## Welcome to HiMount Gardens
 
-Himount Gardens offers comfortable apartment living in Milwaukee with convenient access to neighborhood amenities, transit, and everyday essentials.
+HiMount Gardens offers comfortable apartment living in Milwaukee with convenient access to neighborhood amenities, transit, and everyday essentials.
 
 - 88 total units
 - Studio, 1-bedroom, and 2-bedroom options

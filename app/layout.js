@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap' });
 
 export const metadata = {
-  title: { default: 'Himount Gardens', template: '%s | Himount Gardens' },
-  description: 'Comfortable apartment living in Milwaukee, WI. Studio, 1BR, and 2BR apartments at Himount Gardens.',
+  title: { default: 'HiMount Gardens', template: '%s | HiMount Gardens' },
+  description: 'Comfortable apartment living in Milwaukee, WI. Studio, 1BR, and 2BR apartments at HiMount Gardens.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },

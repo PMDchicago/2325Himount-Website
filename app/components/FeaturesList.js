@@ -28,7 +28,7 @@ export default function FeaturesList() {
     <section className="section features-section">
       <div className="container">
         <div className="text-center" style={{ marginBottom: '2.75rem' }}>
-          <span className="eyebrow">Why Himount Gardens</span>
+          <span className="eyebrow">Why HiMount Gardens</span>
           <h2 className="section-title">A Community Built for You</h2>
         </div>
         <div className="features-grid">

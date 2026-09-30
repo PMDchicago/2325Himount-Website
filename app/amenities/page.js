@@ -5,7 +5,7 @@ import CtaBand from '../components/CtaBand';
 
 export const metadata = {
   title: 'Amenities',
-  description: 'Community amenities and features at Himount Gardens.'
+  description: 'Community amenities and features at HiMount Gardens.'
 };
 
 export default function AmenitiesPage() {

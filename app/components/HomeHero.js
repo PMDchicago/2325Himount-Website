@@ -41,7 +41,7 @@ export default function HomeHero({ site, heroImage }) {
           </h1>
           {!heroImage && (
             <p className="hero-subtitle">
-              Comfortable studio, one-bedroom, and two-bedroom apartments at Himount Gardens —
+              Comfortable studio, one-bedroom, and two-bedroom apartments at HiMount Gardens —
               a well-managed community on Milwaukee&rsquo;s west side.
             </p>
           )}

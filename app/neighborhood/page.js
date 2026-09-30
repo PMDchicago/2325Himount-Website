@@ -5,7 +5,7 @@ import { MapPin, Bus, ShoppingCart, Coffee } from 'lucide-react';
 
 export const metadata = {
   title: 'Neighborhood',
-  description: 'Neighborhood highlights near Himount Gardens in Milwaukee, WI.'
+  description: 'Neighborhood highlights near HiMount Gardens in Milwaukee, WI.'
 };
 
 const HIGHLIGHTS = [
@@ -91,7 +91,7 @@ export default function NeighborhoodPage() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Himount Gardens Location"
+                title="HiMount Gardens Location"
               />
             </div>
           </div>
